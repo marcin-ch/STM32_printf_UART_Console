@@ -88,6 +88,7 @@ Following this article, you get as follows:
 # Summary
 ST article provides good content and I can still use my favourite debugging method 😍
 
+---
 ## How to use this repo (source code)
 1. Clone the repo or download as *.zip* to your local disc drive
     * when clonning please use below command:
@@ -100,3 +101,5 @@ ST article provides good content and I can still use my favourite debugging meth
 
 ## How to use this repo (binary file)
 If you just want to check how the project looks like running on the board, you can flash binary file available in */doc/UART_Console.bin*. As STM32F469 Discovery kit enumerates as MSD (Mass Storage Device) when connected to PC through USB cable, you can simply drag-n-drop binary file to your board. Wait few moments when flashing is in progress, reset the board and you should see application working.
+
+---
