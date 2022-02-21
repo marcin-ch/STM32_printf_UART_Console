@@ -6,6 +6,14 @@ Following this article, you get as follows:
     * connection between target MCU and ST-Link has been show in [Workflow](#workflow) (point 8.)
 2. `printf` output is transmitted by ST-Link to the PC and displayed in terminal emulator application such as [Tera Term](https://ttssh2.osdn.jp/index.html.en)
 
+**21.02.2022 update:** oh huh! There is an example with the same functionality available straight away. It is even extended with taking input from keyboard and displaying it in console. To check it out:
+1. In STM32CubeIDE hit **File** -> **Import** -> **General** -> **Import STM32Cube Example**
+2. In **Example Selector** tab specify the board you working on, list of examples dedicated to your board will be showed up
+3. Look for *UART_Console*, hit **Next**, **Next** again and **Finish** finally
+4. In **Project Explorer** go to */Application/User/main.c* and look for `printf` functions
+
+What I have noticed about examples imported in such way, when you are editing *.ioc* file and re-generating the code, project simply breaks down throwing a lot of errors an warnings. I have not found any quick fix for this. Therefore, caution is strongly advised!
+
 # Hardware
 * [STM32WB5MM-DK](https://www.st.com/en/evaluation-tools/stm32wb5mm-dk.html)
 
